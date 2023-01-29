@@ -11,8 +11,10 @@ Aviation generates 4% of global warming. One half of the aviation contribution i
   
   
 <Project Goals>
+  
   The project goals are as follows. </br>
   1. Detect the presence of contrails in Terrestrial Sky Images.
+  
 2. Create a dashboard of contrail statistics from the Terrestrial Sky Images  
   
 *Content will be updated as the project progresses.
