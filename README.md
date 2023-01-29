@@ -1,7 +1,9 @@
 TERRESTRIAL SKY IMAGE CONTRAIL DASHBOARD (TSICD)
 
 Capstone Project (contrail recognition and dashboard)
+
 DAEN 690-DL2
+
 Team Contrail: Jordan Dutterer, Venkata Sai Ruthvik Pulipaka, Alyssa Soderlund, Jaeho Shin 
 
 <Problem Description>
