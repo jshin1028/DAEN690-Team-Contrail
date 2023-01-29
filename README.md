@@ -1,9 +1,7 @@
 TERRESTRIAL SKY IMAGE CONTRAIL DASHBOARD (TSICD)
 
 Capstone Project (contrail recognition and dashboard)
-
 DAEN 690-DL2
-
 Team Contrail: Jordan Dutterer, Venkata Sai Ruthvik Pulipaka, Alyssa Soderlund, Jaeho Shin 
 
 <Problem Description>
@@ -14,5 +12,4 @@ The project goals are as follows.
 1. Detect the presence of contrails in Terrestrial Sky Images.
 2. Create a dashboard of contrail statistics from the Terrestrial Sky Images  
   
-
 *Content will be updated as the project progresses.
