@@ -16,8 +16,8 @@ The project goals are as follows. <br>
 <br><br>
 
 [About the files attached to this GitHub] <br>
--TensorFlow_Image_Classification.py: Python code that has the ML model for the image classification. <br>
--Weather_Fairfax, VA 22030 2022-08-01 to 2022-12-31.csv: Hourly weather data from the beginning of August, 2022 to the end of December, 2022. <br>
+ - TensorFlow_Image_Classification.py: Python code that has the ML model for the image classification. <br>
+ - Weather_Fairfax, VA 22030 2022-08-01 to 2022-12-31.csv: Hourly weather data from the beginning of August, 2022 to the end of December, 2022. <br>
 
 <br>
 *Content will be updated as the project progresses.
