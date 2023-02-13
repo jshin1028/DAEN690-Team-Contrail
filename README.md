@@ -19,4 +19,4 @@ The project goals are as follows. <br>
  - Weather_Fairfax, VA 22030 2022-08-01 to 2022-12-31.csv: Hourly weather data from the beginning of August, 2022 to the end of December, 2022. <br>
 
 <br>
-_Content will be updated as the project progresses._
+ *Content will be updated as the project progresses.*
