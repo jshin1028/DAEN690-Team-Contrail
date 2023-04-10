@@ -51,10 +51,11 @@ The LongLived contrails are the green colored polygons and Cirrus contrails are 
 The object detection model identifies where in the image the contrails are present and can identify if there are multiple contrails. The algorithm draws a bounding box around the contrails it identifies in the image.  
 To generate the object detection model, the user can select how the train/validation/test split is performed and then choose pre-processing and augmentation steps. The pre-processing steps include auto-orienting, resizing, isolating objects, static cropping, implementing grayscale, auto-adjusting contrast, tiling, modifying the classes, and filtering nulls. Roboflow automatically applies auto-orienting and resizing to optimize model performance. Augmentation steps can be performed for the entire image or just for the bounding box identified in the annotations.
 
-![roboflow preprocessing](https://user-images.githubusercontent.com/123881529/230802757-a8efca39-4665-4a01-aa0a-db930697d3cc.png)
+![roboflow preprocessing2](https://user-images.githubusercontent.com/123881529/230802898-905c833b-040b-4fca-b387-d804f2514853.png)
 
 Once the pre-processing steps are completed, the user can choose how to train the model. Roboflow uses an AutoML product called Roboflow Train to create and train models, which are hosted at an API endpoint (Train - Roboflow). The user has several options to customize the object detection model. Users with the paid upgraded plan can choose a more accurate model that takes longer to train and deploy. For this project, the free version offers a faster but less accurate training model. This model can be trained from a previous project checkpoint, from a public checkpoint, or from scratch. 
-![roboflow detection output](https://user-images.githubusercontent.com/123881529/230802783-a1bbc71a-f08f-42a8-acc1-6fbad246ab16.png)
+
+![roboflow detection output2](https://user-images.githubusercontent.com/123881529/230802915-08ce9437-78f5-4dde-b312-1c567b3a30bb.png)
 ![roboflow heatmap](https://user-images.githubusercontent.com/123881529/230802786-742c2cf7-5627-4621-a124-5518ccbf137b.png)
 
 
