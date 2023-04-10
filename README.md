@@ -27,6 +27,7 @@ The project goals are as follows. <br>
 
 ### Tool/algorithm that We Use for the project
  - Roboflow
+ - Power BI
 <br><br>
 
 ### Cloud Platform (AWS)
