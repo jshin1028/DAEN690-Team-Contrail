@@ -10,7 +10,7 @@ Aviation generates 4% of global warming. One half of the aviation contribution i
 ![daen690 paper pic](https://user-images.githubusercontent.com/123881529/230802355-35e53630-f22b-4f2c-a283-6769ca961030.png)
 <br><br>
 
-Description automatically generated
+
   
 ### Project Goals <br>
 The project goals are as follows. <br>
