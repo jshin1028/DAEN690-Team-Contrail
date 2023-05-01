@@ -32,7 +32,7 @@ The project goals are as follows. <br>
 ### Cloud Platform (AWS)
  - Storage: EC2 instance built-in storage, S3
  - Computing: EC2 (Windows server)
- - Relational Database: RDS
+ - Relational Database: RDS (MySQL)
 <br><br>
 
 ### System Architecture
