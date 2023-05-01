@@ -29,7 +29,7 @@ The project goals are as follows. <br>
  - Images with annotations: https://gmuedu-my.sharepoint.com/personal/jduttere_gmu_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjduttere%5Fgmu%5Fedu%2FDocuments%2FCapstone&ga=1 (need to request the file access) <br>
 <br><br>
 
-### Tool/algorithm that We Use for the project
+### Tool/algorithm that We Used for the project
  - Roboflow
  - Power BI
 <br><br>
