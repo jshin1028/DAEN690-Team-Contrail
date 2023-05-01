@@ -19,9 +19,14 @@ The project goals are as follows. <br>
 <br><br>
 
 ### About the Files Attached to the GitHub <br>
- - TensorFlow_Image_Classification.py: Python code that has the ML model for the image classification. <br>
- - Weather_Fairfax, VA 22030 2022-08-01 to 2022-12-31.csv: Hourly weather data from the beginning of August, 2022 to the end of December, 2022. <br>
- - Images with annotations: https://gmuedu-my.sharepoint.com/personal/jduttere_gmu_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjduttere%5Fgmu%5Fedu%2FDocuments%2FCapstone&ga=1 (need to request the file access). <br>
+ - contrailPrediction.py: Python code that has the trained Roboflow ML model and the GUI for contrails detection prediction. <br>
+ - renameSortFiles.py: Python code that renames and sorts the image files input to the system.
+ - Statistical_tests_on_contrails.ipynb: Jupyter Notebook file with the Python code for processing statistical tests. <br>
+ - Contrail Dashboard.pbix: Power BI file that contains the dashboard for analysis and visualization.
+ - Weather_Fairfax, VA 22030 2022-08-01 to 2022-12-31.csv: Hourly weather data of Fairfax,VA from 2022-08-01 to 2022-12-31. (the dataset is acquired from https://www.visualcrossing.com)<br>
+ - Weather_Fairfax, VA 22030 2023-01-01 to 2023-04-15.csv: Hourly weather data of Fairfax,VA from 2023-01-01 to 2023-04-15. (the dataset is acquired from https://www.visualcrossing.com)<br>
+ - Sky Images dataset: Since the dataset cannot be shared outside of the project, it needs to be requested to Dr.Sherry, the dataset owner (lsherry@gmu.edu). <br>
+ - Images with annotations: https://gmuedu-my.sharepoint.com/personal/jduttere_gmu_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjduttere%5Fgmu%5Fedu%2FDocuments%2FCapstone&ga=1 (need to request the file access) <br>
 <br><br>
 
 ### Tool/algorithm that We Use for the project
