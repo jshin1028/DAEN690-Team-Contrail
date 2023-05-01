@@ -14,9 +14,8 @@ Aviation generates 4% of global warming. One half of the aviation contribution i
   
 ### Project Goals <br>
 The project goals are as follows. <br>
-1. Detect the presence of contrails in Terrestrial Sky Images. <br>
+1. Create a contrail prediction engine that detects the presence of contrails in Terrestrial Sky Images. <br>
 2. Create a dashboard of contrail statistics from the Terrestrial Sky Images. <br>
-3. Create a contrail prediction engine. <br>
 <br><br>
 
 ### About the Files Attached to the GitHub <br>
@@ -31,13 +30,21 @@ The project goals are as follows. <br>
 <br><br>
 
 ### Cloud Platform (AWS)
- - Storage: S3
- - Computing: EC2
+ - Storage: EC2 instance built-in storage, S3
+ - Computing: EC2 (Windows server)
  - Relational Database: RDS
 <br><br>
 
 ### System Architecture
-![daen690 system architecture2 drawio](https://user-images.githubusercontent.com/123881529/230801903-1e667235-0b70-40bc-a3b4-3ab3eebad30d.png)
+![daen690 system architecture2 drawio (2)](https://user-images.githubusercontent.com/123881529/235490310-9306ac0b-b5a6-4254-be0c-2100e4ef90d0.png)
+
+In the system architecture, the first step is to transfer and store three datasets in RDS, which includes sky images, a spreadsheet with image labels, and ground weather data. Following this, the datasets undergo pre-processing and are divided into training and test datasets. The pre-processed datasets are then stored back in RDS, while the sky images are ingested directly into the storage in EC2. 
+
+The model is trained and tested using Roboflow, Momentum AI, and Yolo-Poly algorithms in EC2, selected as suitable algorithms/tools through previous research. After the model training and testing, the model performance of each algorithm/tool is checked. If the performance is satisfactory, the model is used to produce results; otherwise, the model is re-tuned, and the training/test process is repeated. 
+
+The well-trained model's results are saved to RDS, which contains information on detected contrails and annotated contrail images. The results are then displayed and organized in a dashboard using Power BI, which imports the results from RDS. The project also includes a Python GUI for users to run and view predictions using the model in EC2. 
+
+Finally, the project utilizes AWS's storage service, S3, for data backup and large image uploading. The seamless integration of various AWS services, effective pre-processing of datasets, and selection of appropriate algorithms/tools contribute to the success of this project. 
 <br><br>
 
 ### Annotations on the images
@@ -47,7 +54,7 @@ The first way we annotated the images was by using rectangular annotations. We c
 <br>
 ![polygon annotation](https://user-images.githubusercontent.com/123881529/230802541-ca004f6b-9313-49d3-8f77-e128aca35e30.png)
 
-The LongLived contrails are the green colored polygons and Cirrus contrails are colored in red. The main advantage of this annotation is that the machine learning model can detect contrails with more accuracy as these are custom annotations. Polygon Annotations are advantageous when there is no definite or rigid structure of the object that we are trying to predict. This will give us more room to fine tune the model and detect hidden structures present in the clouds. 
+Another way we annotated the images was by using polygon annotations. The LongLived contrails are the green colored polygons and Cirrus contrails are colored in red. The main advantage of this annotation is that the machine learning model can detect contrails with more accuracy as these are custom annotations. Polygon Annotations are advantageous when there is no definite or rigid structure of the object that we are trying to predict. This will give us more room to fine tune the model and detect hidden structures present in the clouds. 
 <br><br>
 ### Usage of Roboflow
 The object detection model identifies where in the image the contrails are present and can identify if there are multiple contrails. The algorithm draws a bounding box around the contrails it identifies in the image.  
@@ -55,11 +62,31 @@ To generate the object detection model, the user can select how the train/valida
 
 ![roboflow preprocessing2](https://user-images.githubusercontent.com/123881529/230802898-905c833b-040b-4fca-b387-d804f2514853.png)
 
-Once the pre-processing steps are completed, the user can choose how to train the model. Roboflow uses an AutoML product called Roboflow Train to create and train models, which are hosted at an API endpoint (Train - Roboflow). The user has several options to customize the object detection model. Users with the paid upgraded plan can choose a more accurate model that takes longer to train and deploy. For this project, the free version offers a faster but less accurate training model. This model can be trained from a previous project checkpoint, from a public checkpoint, or from scratch. 
+Once the pre-processing steps are completed, the user can choose how to train the model. Roboflow uses an AutoML product called Roboflow Train to create and train models, which are hosted at an API endpoint (Train - Roboflow). The user has several options to customize the object detection model. Users with the paid upgraded plan can choose a more accurate model that takes longer to train and deploy. For this project, the free version offers a faster but less accurate training model. This model can be trained from a previous project checkpoint, from a public checkpoint, or from scratch. Also, the user can see the heatmaps of the annotations.
 
 ![roboflow detection output2](https://user-images.githubusercontent.com/123881529/230802915-08ce9437-78f5-4dde-b312-1c567b3a30bb.png)
 ![roboflow heatmap](https://user-images.githubusercontent.com/123881529/230802786-742c2cf7-5627-4621-a124-5518ccbf137b.png)
 
 
 <br><br>
- *Content will be updated as the project progresses.
+
+### Examples of the Detection Model and the Dashboard
+![roboflow trained model result](https://user-images.githubusercontent.com/123881529/235490376-f753562a-5117-4fd8-8c01-85230aa39149.png)
+This is an example of an object detection model output in Roboflow. It shows the detected contrails with the tags (Long Lived or Cirrus) and the confidence percentage for each detected contrail. In Roboflow, the user can control the confidence threshold to filter out the detection at a specific confidence level. When the user is done with the settings, the user can copy and paste the Python code to apply it to a Python system. 
+<br>
+![contrail prediction result](https://user-images.githubusercontent.com/123881529/235490538-fa5b325e-e15e-4e49-af0b-69117b946632.png)
+This is a detection output of the system. It shows annotated contrails with the tags (the text is too small to see the tags in the screenshot, but the user can actually zoom in on the text to see it).
+<br>
+![dashboard1](https://user-images.githubusercontent.com/123881529/235490587-1e1846fc-4ded-456d-9c0f-778cf3739d46.png)
+![dashboard2](https://user-images.githubusercontent.com/123881529/235490595-d3650fa4-f6df-4e8b-b1cc-59dcb017b729.png)
+![dashboard3](https://user-images.githubusercontent.com/123881529/235490604-20ef3288-7fc5-4993-8eec-0ed03ce79d5a.png)
+![dashboard4](https://user-images.githubusercontent.com/123881529/235490608-d6810539-f584-4ff7-9316-a73f15ca2d26.png)
+This is an example of the dashboard. Users can refresh the dashboard by clicking the "refresh" button. The dashboard has multiple pages to show different information. The first page is the overview page where users can filter the data by contrail type, time, and location. This page shows the statistics and graphics of the number of contrails over time and by location. The second page is the detail page where users can filter the data by weather phenomenon such as cloud coverage, precipitation, and humidity. The visualizations on this page show how the number of contrails changes with different weather phenomena. The last two pages show a key influencers visual for total contrails and individual types of contrails. These pages show which variables have the most correlation with the number of contrails. 
+
+
+<br>
+*If you have any questions, please contact us via email.
+jshin14@gmu.edu
+jduttere@gmu.edu
+vpulipak@gmu.edu
+asoderlu@gmu.edu
