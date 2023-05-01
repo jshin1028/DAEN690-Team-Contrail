@@ -72,11 +72,11 @@ Once the pre-processing steps are completed, the user can choose how to train th
 
 ### Examples of the Detection Model and the Dashboard
 ![roboflow trained model result](https://user-images.githubusercontent.com/123881529/235490376-f753562a-5117-4fd8-8c01-85230aa39149.png)
-This is an example of an object detection model output in Roboflow. It shows the detected contrails with the tags (Long Lived or Cirrus) and the confidence percentage for each detected contrail. In Roboflow, the user can control the confidence threshold to filter out the detection at a specific confidence level. When the user is done with the settings, the user can copy and paste the Python code to apply it to a Python system. 
-<br>
+This is an example of an object detection model output in Roboflow. It shows the detected contrails with the tags (Long Lived or Cirrus) and the confidence percentage for each detected contrail. In Roboflow, the user can control the confidence threshold to filter out the detection at a specific confidence level. When the user is done with the settings, the user can copy and paste the Python code to apply it to a Python system. <br>
+<br><br>
 ![contrail prediction result](https://user-images.githubusercontent.com/123881529/235490538-fa5b325e-e15e-4e49-af0b-69117b946632.png)
-This is a detection output of the system. It shows annotated contrails with the tags (the text is too small to see the tags in the screenshot, but the user can actually zoom in on the text to see it).
-<br>
+This is a detection output of the system. It shows annotated contrails with the tags (the text is too small to see the tags in the screenshot, but the user can actually zoom in on the text to see it). <br>
+<br><br>
 ![dashboard1](https://user-images.githubusercontent.com/123881529/235490587-1e1846fc-4ded-456d-9c0f-778cf3739d46.png)
 ![dashboard2](https://user-images.githubusercontent.com/123881529/235490595-d3650fa4-f6df-4e8b-b1cc-59dcb017b729.png)
 ![dashboard3](https://user-images.githubusercontent.com/123881529/235490604-20ef3288-7fc5-4993-8eec-0ed03ce79d5a.png)
@@ -85,8 +85,8 @@ This is an example of the dashboard. Users can refresh the dashboard by clicking
 
 
 <br>
-*If you have any questions, please contact us via email.
-jshin14@gmu.edu
-jduttere@gmu.edu
-vpulipak@gmu.edu
-asoderlu@gmu.edu
+*If you have any questions, please contact us via email. <br>
+jshin14@gmu.edu <br>
+jduttere@gmu.edu <br>
+vpulipak@gmu.edu <br>
+asoderlu@gmu.edu <br>
