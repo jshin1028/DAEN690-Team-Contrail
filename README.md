@@ -94,7 +94,7 @@ This is an example of the dashboard. Users can refresh the dashboard by clicking
 
 <br>
 <hr>
-<strong>If you have any questions, please contact us via email.<strong>
+<strong>If you have any questions, please contact us via email.</strong>
 <br>
 jshin14@gmu.edu <br>
 jduttere@gmu.edu <br>
