@@ -71,19 +71,19 @@ Once the pre-processing steps are completed, the user can choose how to train th
 <br><br>
 
 ### Examples of the Detection Model and the Dashboard
-![roboflow trained model result](https://user-images.githubusercontent.com/123881529/235490376-f753562a-5117-4fd8-8c01-85230aa39149.png)
+![roboflow trained model result](https://user-images.githubusercontent.com/123881529/235490376-f753562a-5117-4fd8-8c01-85230aa39149.png) <br>
 This is an example of an object detection model output in Roboflow. It shows the detected contrails with the tags (Long Lived or Cirrus) and the confidence percentage for each detected contrail. In Roboflow, the user can control the confidence threshold to filter out the detection at a specific confidence level. When the user is done with the settings, the user can copy and paste the Python code to apply it to a Python system. <br>
 <br><br>
-![prediction tool gui](https://user-images.githubusercontent.com/123881529/235492898-4df28b2e-1e29-47d9-bcc6-ddcb58c80990.png)
+![prediction tool gui](https://user-images.githubusercontent.com/123881529/235492898-4df28b2e-1e29-47d9-bcc6-ddcb58c80990.png) <br>
 This is the GUI for the contrail prediction tool. It is used to Identify contrails in sky images using our Roboflow trained object-detection model. The user can set a confidence threshold for contrail detection (1-99%), and it automatically logs results in the database which sources the Power BI dashboard. Finally, it exports current predictions in the database as an Excel file.<br>
 <br><br>
-![contrail prediction result](https://user-images.githubusercontent.com/123881529/235490538-fa5b325e-e15e-4e49-af0b-69117b946632.png)
+![contrail prediction result](https://user-images.githubusercontent.com/123881529/235490538-fa5b325e-e15e-4e49-af0b-69117b946632.png) <br>
 This is an example of detection from the system through the contrail prediction GUI. It shows annotated contrails with the tags (the text is too small to see the tags in the screenshot, but the user can actually zoom in on the text to see it). <br>
 <br><br>
-![dashboard1](https://user-images.githubusercontent.com/123881529/235490587-1e1846fc-4ded-456d-9c0f-778cf3739d46.png)
-![dashboard2](https://user-images.githubusercontent.com/123881529/235490595-d3650fa4-f6df-4e8b-b1cc-59dcb017b729.png)
-![dashboard3](https://user-images.githubusercontent.com/123881529/235490604-20ef3288-7fc5-4993-8eec-0ed03ce79d5a.png)
-![dashboard4](https://user-images.githubusercontent.com/123881529/235490608-d6810539-f584-4ff7-9316-a73f15ca2d26.png)
+![dashboard1](https://user-images.githubusercontent.com/123881529/235490587-1e1846fc-4ded-456d-9c0f-778cf3739d46.png) <br>
+![dashboard2](https://user-images.githubusercontent.com/123881529/235490595-d3650fa4-f6df-4e8b-b1cc-59dcb017b729.png) <br>
+![dashboard3](https://user-images.githubusercontent.com/123881529/235490604-20ef3288-7fc5-4993-8eec-0ed03ce79d5a.png) <br>
+![dashboard4](https://user-images.githubusercontent.com/123881529/235490608-d6810539-f584-4ff7-9316-a73f15ca2d26.png) <br>
 This is an example of the dashboard. Users can refresh the dashboard by clicking the "refresh" button. The dashboard has multiple pages to show different information. The first page is the overview page where users can filter the data by contrail type, time, and location. This page shows the statistics and graphics of the number of contrails over time and by location. The second page is the detail page where users can filter the data by weather phenomenon such as cloud coverage, precipitation, and humidity. The visualizations on this page show how the number of contrails changes with different weather phenomena. The last two pages show a key influencers visual for total contrails and individual types of contrails. These pages show which variables have the most correlation with the number of contrails. 
 
 
